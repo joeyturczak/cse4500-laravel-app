@@ -18,7 +18,7 @@
                     <div class="card-header">
                         <h5 class="card-title">Create Labels</h5>
                         <div class="card-tools">
-                            <a href="#" class="btn btn-tool btn-link">#3</a> == $0
+                            <a href="#" class="btn btn-tool btn-link">#3</a>
                             <a href="#" class="btn btn-tool">
                                 <i class="fas fa-pen"></i>
                             </a>
@@ -27,23 +27,23 @@
                     <div class="card-body">
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox1" disabled>
-                            <label for="customCheckbox1" class="custom-control-label">"Bug"</label>
+                            <label for="customCheckbox1" class="custom-control-label">Bug</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox2" disabled>
-                            <label for="customCheckbox2" class="custom-control-label">"Feature"</label>
+                            <label for="customCheckbox2" class="custom-control-label">Feature</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox3" disabled>
-                            <label for="customCheckbox3" class="custom-control-label">"Enhancement"</label>
+                            <label for="customCheckbox3" class="custom-control-label">Enhancement</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox4" disabled>
-                            <label for="customCheckbox4" class="custom-control-label">"Documentation"</label>
+                            <label for="customCheckbox4" class="custom-control-label">Documentation</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox5" disabled>
-                            <label for="customCheckbox5" class="custom-control-label">"Examples"</label>
+                            <label for="customCheckbox5" class="custom-control-label">Examples</label>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <div class="card-header">
                         <h5 class="card-title">Create Issue Template</h5>
                         <div class="card-tools">
-                            <a href="#" class="btn btn-tool btn-link">#4</a> == $0
+                            <a href="#" class="btn btn-tool btn-link">#4</a>
                             <a href="#" class="btn btn-tool">
                                 <i class="fas fa-pen"></i>
                             </a>
@@ -60,11 +60,11 @@
                     <div class="card-body">
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox1_1" disabled>
-                            <label for="customCheckbox1_1" class="custom-control-label">"Bug Report"</label>
+                            <label for="customCheckbox1_1" class="custom-control-label">Bug Report</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="customCheckbox1_2" disabled>
-                            <label for="customCheckbox1_2" class="custom-control-label">"Feature Request"</label>
+                            <label for="customCheckbox1_2" class="custom-control-label">Feature Request</label>
                         </div>
                     </div>
                 </div>
