@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/events-feed', function () {
+    return response()->file(resoure_path('assets/js/data/events.json'));
+});
