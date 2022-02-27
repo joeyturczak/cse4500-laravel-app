@@ -31,5 +31,5 @@ Route::get('/board', function () {
 
 Route::get('/events-feed', function () {
     $path = storage_path() . "/json/events.json";
-    return response()->json_decode(file_get_contents($path), true);
+    return json_decode(file_get_contents($path), true);
 });
