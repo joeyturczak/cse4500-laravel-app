@@ -7,10 +7,187 @@
 @stop
 
 @section('content')
-<div class="card">
-  <div class="card-body">
-      <div class="card-header">Backlog</div>
-  </div>
+<div class="row">
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="card card-row card-secondary">
+            <div class="card-header">
+                <h3 class="card-title"> Backlog </h3>
+                ::after
+            </div>
+            <div class="card-body">
+                <div class="card card-info card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Create Labels</h5>
+                        <div class="card-tools">
+                            <a href="#" class="btn btn-tool btn-link">#3</a> == $0
+                            <a href="#" class="btn btn-tool">
+                                <i class="fas fa-pen">
+                                    ::before
+                                </i>
+                            </a>
+                        </div>
+                        ::after
+                    </div>
+                    <div class="card-body">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox1" disabled>
+                            <label for="customCheckbox1" class="custom-control-label">
+                                ::before
+                                "Bug"
+                                ::after
+                            </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox2" disabled>
+                            <label for="customCheckbox2" class="custom-control-label">
+                                ::before
+                                "Feature"
+                                ::after
+                            </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox3" disabled>
+                            <label for="customCheckbox3" class="custom-control-label">
+                                ::before
+                                "Enhancement"
+                                ::after
+                            </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox4" disabled>
+                            <label for="customCheckbox4" class="custom-control-label">
+                                ::before
+                                "Documentation"
+                                ::after
+                            </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox5" disabled>
+                            <label for="customCheckbox5" class="custom-control-label">
+                                ::before
+                                "Examples"
+                                ::after
+                            </label>
+                        </div>
+                        ::after
+                    </div>
+                </div>
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Create Issue Template</h5>
+                        <div class="card-tools">
+                            <a href="#" class="btn btn-tool btn-link">#4</a> == $0
+                            <a href="#" class="btn btn-tool">
+                                <i class="fas fa-pen">
+                                    ::before
+                                </i>
+                            </a>
+                        </div>
+                        ::after
+                    </div>
+                    <div class="card-body">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox1_1" disabled>
+                            <label for="customCheckbox1_1" class="custom-control-label">
+                                ::before
+                                "Bug Report"
+                                ::after
+                            </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckbox1_2" disabled>
+                            <label for="customCheckbox1_2" class="custom-control-label">
+                                ::before
+                                "Feature Request"
+                                ::after
+                            </label>
+                        </div>
+                        ::after
+                    </div>
+                </div>
+                ::after
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="card card-row card-primary">
+            <div class="card-header">
+                <h3 class="card-title"> To Do </h3>
+                ::after
+            </div>
+            <div class="card-body">
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Create First Milestone</h5>
+                        <div class="card-tools">
+                            <a href="#" class="btn btn-tool btn-link">#5</a>
+                            <a href="#" class="btn btn-tool">
+                                <i class="fas fa-pen">
+                                    ::before
+                                </i>
+                            </a>
+                        </div>
+                        ::after
+                    </div>
+                </div>
+                ::after
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="card card-row card-default">
+            <div class="card-header bg-info">
+                <h3 class="card-title"> In Progress </h3>
+                ::after
+            </div>
+            <div class="card-body">
+                <div class="card card-light card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Update Readme</h5>
+                        <div class="card-tools">
+                            <a href="#" class="btn btn-tool btn-link">#2</a>
+                            <a href="#" class="btn btn-tool">
+                                <i class="fas fa-pen">
+                                    ::before
+                                </i>
+                            </a>
+                        </div>
+                        ::after
+                    </div>
+                    <div class="card-body">
+                        <p> Post application address in the Readme. </p>
+                        ::after
+                    </div>
+                </div>
+                ::after
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="card card-row card-success">
+            <div class="card-header">
+                <h3 class="card-title"> Done </h3>
+                ::after
+            </div>
+            <div class="card-body">
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h5 class="card-title">Create Repo</h5>
+                        <div class="card-tools">
+                            <a href="#" class="btn btn-tool btn-link">#1</a>
+                            <a href="#" class="btn btn-tool">
+                                <i class="fas fa-pen">
+                                    ::before
+                                </i>
+                            </a>
+                        </div>
+                        ::after
+                    </div>
+                </div>
+                ::after
+            </div>
+        </div>
+    </div>
 </div>
 @stop
 
