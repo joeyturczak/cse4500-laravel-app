@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/calendar/events-feed', function () {
-    return response()->file(resoure_path('assets/js/data/events.json'));
+    return response()->json_decode(file_get_contents(resoure_path('assets/js/data/events.json')), true);
 });
