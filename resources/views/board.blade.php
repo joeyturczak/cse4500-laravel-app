@@ -140,11 +140,3 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
-
-@section('js')
-<script>
-    $(document).ready(function() {
-        $('#table').DataTable();
-    } );
-</script>
-@stop
