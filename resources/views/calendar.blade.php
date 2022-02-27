@@ -1,5 +1,7 @@
 @extends('adminlte::page')
 
+@section('plugins.Datatables', true)
+
 @section('title', 'Calendar')
 
 @section('content_header')
