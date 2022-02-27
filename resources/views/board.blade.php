@@ -9,21 +9,7 @@
 @section('content')
 <div class="card">
   <div class="card-body">
-    <table id="table" class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Backlog</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Update software</td>
-        </tr>
-        <tr>
-          <td>Clean database</td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="card-header">Backlog</div>
   </div>
 </div>
 @stop
