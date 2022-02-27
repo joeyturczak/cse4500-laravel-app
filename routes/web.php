@@ -33,3 +33,7 @@ Route::get('/events-feed', function () {
     $path = storage_path() . "/json/events.json";
     return json_decode(file_get_contents($path), true);
 });
+
+Route::fallback(function() {
+    return view('notfound');
+});
