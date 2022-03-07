@@ -41,3 +41,18 @@ Route::get('/events-feed', function () {
 Route::fallback(function() {
     return view('notfound');
 });
+
+Route::get('/db-test', function() {
+    try {
+        \DB::connection()->getPDO();
+        $db_name = \DB::connection()->getDatabaseName();
+        echo 'Database Connected: '.$dbname;
+    } catch (\Exception $e) {
+        echo 'None';
+    }
+});
+
+Route::get('/db-migrate', function() {
+    Artisan::call('migrate');
+    echo Artisan::output();
+});
