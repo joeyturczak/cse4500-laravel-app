@@ -44,7 +44,7 @@ Route::fallback(function() {
 
 Route::get('/db-test', function() {
     try {
-        \DB::connection()->getPDO();
+        //\DB::connection()->getPDO();
         $db_name = \DB::connection()->getDatabaseName();
         echo 'Database Connected: '.$dbname;
     } catch (\Exception $e) {
