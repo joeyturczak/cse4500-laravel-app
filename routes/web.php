@@ -42,13 +42,11 @@ Route::fallback(function() {
     return view('notfound');
 });
 
-Route::get('/db-test', function() {
-    try {
-        \DB::connection()->getPDO();
-        $db_name = \DB::connection()->getDatabaseName();
-        echo 'Database Connected: '.$dbname;
+Route::get('/db-test', function () {
+    try {         
+         echo \DB::connection()->getDatabaseName();     
     } catch (\Exception $e) {
-        echo 'None';
+          echo 'None';
     }
 });
 
