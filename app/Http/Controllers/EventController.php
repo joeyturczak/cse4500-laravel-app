@@ -58,8 +58,8 @@ class EventController extends Controller
      */
     public function show($id)
     {
-        $event = Event::find($id);
-        return view('events.show', compact('event'));
+        $events = Event::select('title', 'start_time AS start', 'end_time AS end')->get();
+        return view('events.show', compact('events'));
     }
 
     /**
