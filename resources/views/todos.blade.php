@@ -32,6 +32,7 @@
             <a class="btn btn-default btn-sm" href="{{ route('todos.show', ['todo'=>$todo->id]) }}">View</a>
           </td>
         </tr>
+        @endforeach
 
       </tbody>
     </table>
