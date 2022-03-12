@@ -9,6 +9,6 @@
 @section('content')
   <h2>{{ $todo->title; }}</h2>
   <div>
-    <p>{{ $todo.progress; }}% finished</p>
+    <p>{{ $todo->progress; }}% finished</p>
   </div>
 @stop
