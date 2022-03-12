@@ -16,7 +16,7 @@ class EventController extends Controller
     {
         // $events = Event::select('title', 'start_time AS start', 'end_time AS end')->get();
         // return json_encode(compact('events')['events']);
-        return view('calendar');
+        return view('events');
     }
 
     /**

@@ -39,8 +39,10 @@ Route::get('/board', function () {
 });
 
 Route::get('/events-feed', function () {
-    $path = storage_path() . "/json/events.json";
-    return json_decode($events, true);
+    // $path = storage_path() . "/json/events.json";
+    // return json_decode($events, true);
+    $events = Event::select('title', 'start_time AS start', 'end_time AS end')->get();
+    return json_encode(compact('events')['events']);
 });
 
 Route::fallback(function() {
