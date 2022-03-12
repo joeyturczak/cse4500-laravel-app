@@ -44,10 +44,12 @@ class EventController extends Controller
             'end_time' => 'required'
         ]);
 
+        $format = "Y-m-d\TH:i:s";
+
         $event = Event::create([
             'title' => $request->title,
-            'start_time' => date("Y-m-d\TH:i:s", $request->start_time),
-            'end_time' => date("Y-m-d\TH:i:s", $request->end_time)
+            'start_time' => date($format, strtotime($request->start_time)),
+            'end_time' => date($format, strtotime($request->end_time))
         ]);
 
         return $this->index();
