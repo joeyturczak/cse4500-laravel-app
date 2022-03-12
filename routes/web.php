@@ -29,21 +29,19 @@ Route::resource('/todos', TodoController::class);
 //     return view('todos');
 // });
 
-Route::resource('/calendar', EventController::class);
-// Route::get('/calendar', function () {
-//     return view('calendar');
-// });
+Route::get('/calendar', function () {
+    return view('calendar');
+});
 
 Route::get('/board', function () {
     return view('board');
 });
 
-
-Route::get('/events-feed', function () {
-    // $path = storage_path() . "/json/events.json";
-    $events = Event::select('title', 'start_time AS start', 'end_time AS end')->get();
-    return json_decode($events, true);
-});
+Route::resource('/events-feed', EventController::class);
+// Route::get('/events-feed', function () {
+//     // $path = storage_path() . "/json/events.json";
+//     return json_decode($events, true);
+// });
 
 Route::fallback(function() {
     return view('notfound');
