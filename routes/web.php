@@ -22,9 +22,10 @@ Route::get('/home', function () {
     return view('welcome');
 });
 
-Route::get('/todos', function () {
-    return view('todos');
-});
+Route::resource('/todos', TodoController::class);
+// Route::get('/todos', function () {
+//     return view('todos');
+// });
 
 Route::get('/calendar', function () {
     return view('calendar');
@@ -56,4 +57,4 @@ Route::get('/db-migrate', function() {
     echo Artisan::output();
 });
 
-Route::resource('/todos', TodoController::class);
+
