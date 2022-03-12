@@ -29,10 +29,10 @@ Route::resource('/todos', TodoController::class);
 //     return view('todos');
 // });
 
-Route::resource('/calendar', EventController::class);
-// Route::get('/calendar', function () {
-//     return view('calendar');
-// });
+//Route::resource('/calendar', EventController::class);
+Route::get('/calendar', function () {
+    return view('calendar');
+});
 
 Route::get('/board', function () {
     return view('board');
