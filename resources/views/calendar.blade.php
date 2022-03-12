@@ -3,8 +3,10 @@
 @section('title', 'Calendar')
 
 @section('content_header')
-    <h1>Calendar</h1>
-    <a style="float:right" href="{{ route('todos.create') }}" class="btn btn-primary">Create</a>
+    <h1>Calendar
+      <a style="float:right" href="{{ route('todos.create') }}" class="btn btn-primary">Create</a>
+    </h1>
+    
 @stop
 
 @section('content')
