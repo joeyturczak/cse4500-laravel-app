@@ -39,7 +39,7 @@ class TodoController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required',
-            'progress' => $request->progress,
+            'progress' => 'required',
         ]);
 
         $todo = Todo::create([
