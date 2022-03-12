@@ -4,9 +4,11 @@
 
 @section('content_header')
     <h1>Calendar</h1>
+    <a style="float:right" href="{{ route('todos.create') }}" class="btn btn-primary">Create</a>
 @stop
 
 @section('content')
+
 <div class="row">
   <div class="col-md-12">
     <div class="card card-primary">
